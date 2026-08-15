@@ -724,3 +724,8 @@ else:
             })
         st.dataframe(log_rows, use_container_width=True)
     st.caption(L["page_caption"])
+st.caption(L["page_caption"])
+st.markdown(
+    "<p style='color:#888888; font-size:12px; text-align:center; margin-top:8px;'>To Jessie, Halle, and Bettie from Spes House, HSYLC 2026 (PKU)---- the time we shared .</p >",
+    unsafe_allow_html=True
+)
