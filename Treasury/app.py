@@ -478,41 +478,41 @@ def calculate_ending():
     ET = ENDING_TEXT[lang]
     # 🔴失败结局，优先判断
     # 信任跌到危险线下方很深，被解雇
-    if trust <= 28:
+    if trust <= 30:
         title = ET["fired_title"]
         desc = ET["fired_desc"]
         return 0, title, desc
     # 主权信用崩盘：债务、通胀、外汇三项危机任意两项达到深度危机
     crisis_count = 0
-    if debt >= 72:
+    if debt >= 70:
         crisis_count += 1
-    if cpi >= 72:
+    if cpi >= 70:
         crisis_count += 1
-    if forex <= 28:
+    if forex <= 30:
         crisis_count += 1
     if crisis_count >= 2:
         title = ET["crash_title"]
         desc = ET["crash_desc"]
         return 0, title, desc
     # 民众彻底暴动
-    if satisfy <= 26:
+    if satisfy <= 30:
         title = ET["revolt_title"]
         desc = ET["revolt_desc"]
         return 0, title, desc
     # 🟢顶级完美结局：大部分指标进入仪表盘绿色健康区间
-    if (25 <= cpi <= 48 and unemp <= 48 and debt <= 48
-        and satisfy >= 72 and trust >= 72
-        and pb >= 70 and gdp >= 70 and forex >= 70):
+    if (22 <= cpi <= 50 and unemp <= 49 and debt <= 50
+        and satisfy >= 68 and trust >= 70
+        and pb >= 69 and gdp >= 69 and forex >= 69):
         title = ET["perfect_title"]
         desc = ET["perfect_desc"]
         return 100, title, desc
     # 🟢财政优先：低债务、强财政，民生中等
-    if debt <= 42 and pb >= 72 and cpi <= 52 and 48 <= satisfy <= 68 and gdp >= 58:
+    if debt <= 45 and pb >= 70 and cpi <= 50 and 48 <= satisfy <= 68 and gdp >= 57:
         title = ET["fiscal_win_title"]
         desc = ET["fiscal_win_desc"]
         return 90, title, desc
     # 🟢民生优先：满意度很高，债务偏高
-    if satisfy >= 70 and gdp >= 58 and cpi <= 55 and 48 <= debt <= 68:
+    if satisfy >= 68 and gdp >= 56 and cpi <= 55 and 48 <= debt <= 68:
         title = ET["people_win_title"]
         desc = ET["people_win_desc"]
         return 85, title, desc
