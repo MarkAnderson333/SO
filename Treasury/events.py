@@ -979,7 +979,7 @@ EVENTS = [
                     "zh": "推出大规模内需刺激方案，对冲外部需求下滑",
                     "en": "Launch large-scale domestic demand stimulus packages to offset collapsing external demand"
                 },
-                "effect": {"gdp_growth": -8, "budget_balance": -10, "public_debt": 9}
+                "effect": {"gdp_growth": -3, "budget_balance": -6, "public_debt": 7}
             },
             {
                 "text": {
@@ -1017,7 +1017,7 @@ EVENTS = [
                     "zh": "集中释放战略石油储备，缓解国内能源供应紧张",
                     "en": "Massively release strategic petroleum reserves to ease domestic energy shortages"
                 },
-                "effect": {"forex_reserve": -9, "budget_balance": -8, "inflation": -4}
+                "effect": {"forex_reserve": -5, "budget_balance": -6, "inflation": -4}
             },
             {
                 "text": {
@@ -1062,7 +1062,7 @@ EVENTS = [
                     "zh": "依照既有程序组建过渡团队，维持政策大体连续",
                     "en": "Form a transitional government per legal procedures to preserve broad policy continuity"
                 },
-                "effect": {"presidential_trust": -7, "public_satisfaction": -6, "gdp_growth": -5}
+                "effect": {"presidential_trust": -6, "public_satisfaction": -5, "gdp_growth": -4}
             },
             {
                 "text": {
@@ -1094,7 +1094,7 @@ EVENTS = [
                     "zh": "提升军事部署等级，施加强硬军事压力",
                     "en": "Escalate military deployments to apply hardline strategic pressure"
                 },
-                "effect": {"public_debt": 10, "forex_reserve": -8, "inflation": 9}
+                "effect": {"public_debt": 10, "forex_reserve": -6, "inflation": 7}
             },
             {
                 "text": {
@@ -1132,7 +1132,7 @@ EVENTS = [
                     "zh": "临时暂停黄金兑换业务，争取国际协商时间",
                     "en": "Temporarily suspend gold convertibility to secure time for international negotiations"
                 },
-                "effect": {"forex_reserve": -3, "presidential_trust": -9, "inflation": 8}
+                "effect": {"forex_reserve": -3, "presidential_trust": -7, "inflation": 6}
             },
             {
                 "text": {
@@ -1171,7 +1171,7 @@ EVENTS = [
                     "zh": "出台广泛金融兜底承诺，稳定整个金融市场信心",
                     "en": "Issue sweeping financial backstop guarantees to restore confidence across all markets"
                 },
-                "effect": {"public_debt": 9, "budget_balance": -8, "inflation": 7}
+                "effect": {"public_debt": 7, "budget_balance": -5, "inflation": 6}
             },
             {
                 "text": {
@@ -1209,7 +1209,7 @@ EVENTS = [
                     "zh": "紧急完善跨境资本流动管理规则，抑制资本快速外流",
                     "en": "Rapidly strengthen cross-border capital flow regulations to stem rapid outflows"
                 },
-                "effect": {"forex_reserve": -4, "gdp_growth": -9, "presidential_trust": -7}
+                "effect": {"forex_reserve": -4, "gdp_growth": -6, "presidential_trust": -5}
             },
             {
                 "text": {
