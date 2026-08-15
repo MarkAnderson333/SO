@@ -451,7 +451,7 @@ else:
         st.subheader(evt["name"])
         st.write(evt["desc"])
         opts = evt["choices"]
-        col_a, col_b = st.columns(2)
+        col_a, col_b, col_c = st.columns(3)
         with col_a:
             if st.button(opts[0]["text"], use_container_width=True):
                 apply_delta(opts[0]["effect"])
@@ -469,6 +469,16 @@ else:
                     "day": st.session_state.day,
                     "event": evt["name"],
                     "choice": opts[1]["text"]
+                })
+                st.session_state.event_resolved = True
+                st.rerun()
+        with col_c:
+            if st.button(opts[2]["text"], use_container_width=True):
+                apply_delta(opts[2]["effect"])
+                st.session_state.decision_log.append({
+                    "day": st.session_state.day,
+                    "event": evt["name"],
+                    "choice": opts[2]["text"]
                 })
                 st.session_state.event_resolved = True
                 st.rerun()
