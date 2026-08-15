@@ -382,7 +382,7 @@ EVENTS = [
         "tier": 3,
         "weight": 5,
         "auto_choice": 1,
-        "desc": "突发地缘冲突导致国际原油供应骤然中断，油价瞬间暴涨。做一次飞机价格飙升至500万美金！",
+        "desc": "突发地缘冲突导致国际原油供应骤然中断，油价瞬间暴涨。坐一次飞机价格飙升至500万美金！",
         "choices": [
             {"text": "集中释放战略石油储备，缓解国内能源供应紧张", "effect": {"forex_reserve": -9, "budget_balance": -8, "inflation": -4}},
             {"text": "分批次释放少量储备，其余由市场消化油价上涨影响", "effect": {"inflation": 9, "gdp_growth": -8, "unemployment": 7}},
@@ -391,7 +391,7 @@ EVENTS = [
     },
     {
         "id": "president_sudden_death",
-        "name": "总统突然暴毙",
+        "name": "总统暴毙了孩子们",
         "era": "any",
         "tier": 3,
         "weight": 5,
